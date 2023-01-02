@@ -8,6 +8,10 @@ The minimalist note-keeper automatically saves your notes in your browser, so yo
 
 I wrote the code for this a very long time ago, and I would like to completely rewrite it. The notes are stored in your browser in `sessionStorage`, so clearing your browser history will clear your notes. Don't use this tool for anything important, in other words. I don't know if there's a bunch of bugs right now, but I'm uploading this project anyway to showcase my passion for building things! :-)
 
+## Try it yourself
+
+You can try it [here](https://neontomo.com/play/ctrl).
+
 ## Why did I make this?
 
 I've tried a bunch of different note-keepers, and liked none of them. One of the more minimalist tools called Bear is a paid service, and simple tools like Notepad don't offer very good organising structures. So I set out to build the perfect tool for myself, allowing me to organise notes into folders, save them in my browser and make `.txt` backups to my computer, all while keeping the design and usability very simple. Two features that meant a lot to me was having word and character count being visible at all times, and being able to quickly search to find what I needed.
