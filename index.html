@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ctrl</title>
+		<link rel=stylesheet href="css/style.css" type="text/css" />
+		<link rel=stylesheet type="text/css" id=theme-css />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="icon" type="image/png" href="favicon.png" />
+	</head>
+	<body>
+		<div id=main>
+			<div id=container>
+				<div id=sidebar>
+					<div id=scroll-container>
+						<span id=settings>
+							<input id=fontsize min=0 placeholder="Fontsize (14 default)" type=number />
+							<input id=lineheight min=0 placeholder="Lineheight (23 default)" type=number />
+							<select id=font>
+								<option disabled>Font preference</option>
+								<option value=Arial>Arial</option>
+								<option value="DM Mono">DM Mono</option>
+								<option value=Monospace>Monospace</option>
+								<option value=Roboto>Roboto</option>
+							</select>
+							<select id=indentation>
+								<option disabled>Indentation preference</option>
+								<option value="Tab" selected>Tabs</option>
+								<option value=" ">1 spaces</option>
+								<option value="  ">2 spaces</option>
+								<option value="   ">3 spaces</option>
+								<option value="    ">4 spaces</option>
+								<option value="     ">5 spaces</option>
+								<option value="      ">6 spaces</option>
+								<option value="       ">7 spaces</option>
+							</select>
+						</span>
+						<div id=navigation>
+							<input id=searchInput type=search placeholder="⌕ search" />
+						</div>
+					</div>
+				</div>
+				<div id="textarea-nav">
+					<span id="nav-bar">
+						<h1>Ctrl</h1>
+						<span id="file-edit">
+							<span class=nav-title>File</span>
+							<span id="file-menu">
+								<span id=newNoteButton title="New note">+ New note</span>
+								<span id=downloadNote title="Download note to file">↶ Download</span>
+								<span id=deleteNote title="Delete note permanently">⨯ Delete</span>
+								<span id=renameNote title="Rename note">✎ Rename</span>
+								<span id=changeCategory title="Change category">✎ Change category</span>
+							</span>
+						</span>
+						<span id="config">
+							<span class=nav-title>Tools</span>
+							<span id="tools-menu">
+								<span id=settingsButton title=Settings>☰ Settings</span>
+								<span id=backup title="Backup - requires download permission">⧉ Backup</span>
+								<span id=restoreBackup title="Restore backup from local file">↺ Restore</span>
+								<span id=clearNotes title="Clear all notes permanently">✗ Clear all</span>
+							</span>
+						</span>
+						<span style="display:none !important;" id="text-manipulation">
+							<span class=nav-title>Text Manipulation</span>
+							<span id="text-menu">
+								<!--<span id=getRhyme title="Get rhymes for word">Get rhyme</span>-->
+								<span id=uppercaseIm title="Uppercase I'm, I've, I'd, I'll">A* i'm → I'm</span>
+								<span id=uppercaseFirst title="Uppercase first letter">A* Uppercase</span>
+								<span id=uppercaseAll title="Uppercase all letters">AB Uppercase</span>
+								<span id=lowercaseFirst title="Lowercase first letter">a* Lowercase</span>
+								<span id=lowercaseAll title="Lowercase all letters">ab Lowercase</span>
+								<span id=replacer title="Replace text">/*/ Replace</span>
+							</span>
+						</span>
+						<div id=documentCounter>
+							<span id=wordCount title="Word count">Words:</span>
+							<span id=characterCount title="Character count">Characters:</span>
+						</div>
+					</span>
+					<textarea id=write></textarea>
+				</div>
+				<div id="rhymes"></div>
+				<div id=contextMenu style="display:none">
+					<span id=getRhyme>Get rhyme</span>
+					<span id=cutText>Cut</span>
+				</div>
+			</div>
+		</div>
+		<div id=replaceString>
+			<span>Replace text</span>
+			<input type=text id=replaceStringFrom placeholder="Replace what (accepts RegEx)"/>
+			<input type=text id=replaceStringTo placeholder="Replace with (accepts RegEx)"/>
+			<input type=checkbox id=replaceStringCheckbox /><span>Case insensitive</span>
+			<div id="replaceStringButtons">
+				<input type=button value="Replace all" id=replaceStringReplace />
+				<input type=button value="Cancel" id=replaceStringCancel />
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js" type="text/javascript"></script>
+		<script src="js/main_functions.js" type="text/javascript"></script>
+		<script src="js/text_manipulation.js" type="text/javascript"></script>
+		<script src="js/wordgen.js" type="text/javascript"></script>
+		<script src="js/script.js" type="text/javascript"></script>
+	</body>
+</html>
