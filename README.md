@@ -10,7 +10,7 @@ I wrote the code for this a very long time ago, and I would like to completely r
 
 ## try it yourself
 
-you can try it [here](https://neontomo.com/play/ctrl).
+you can try it [here](https://iamtomo.com/play/ctrl).
 
 ## why did I make this?
 

@@ -206,19 +206,11 @@ input::-webkit-inner-spin-button {
 	padding: 0 !important;
 }
 
-#settings {
-	display: none !important;
-}
-
-#settings.active {
-	display: block !important;
-}
-
 /* TEXTAREA */
 
 #textarea-nav {
 	background: #fff;
-	width: 74.5% !important;
+	width: 60% !important;
 	height: 81.5% !important;
 	margin: 80px 0 0 190px !important;
 	border-radius: 8px !important;

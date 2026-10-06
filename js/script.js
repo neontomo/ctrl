@@ -29,17 +29,6 @@ $("#newNoteButton").on("click", () => {
 	newNote(newNoteCategory, newNoteName);
 });
 
-// Settings click
-$("#settingsButton").on("click", function () {
-	$(this).toggleClass("bold");
-	$("#settings").toggleClass("active");
-});
-
-// Save settings values on input
-$("#settings > input,#settings > select").on("input", function () {
-	saveSetting($(this).attr("id"));
-});
-
 // Backup click
 $("#backup").on("click", () => {
 	var currentDate = new Date();
@@ -106,19 +95,7 @@ $("#write").on("keyup", () => {
 	);
 });
 
-// Settings
-
-$("#fontsize").on("input", function () {
-	changeCss("font-size", $(this).val(), "14", "px");
-});
-
-$("#lineheight").on("input", function () {
-	changeCss("line-height", $(this).val(), "23", "px");
-});
-
-$("#font").on("input", function () {
-	changeCss("font-family", $(this).val(), "Roboto", "");
-});
+// Search
 
 $("#searchInput").on("input", function () {
 	var searchInput = $(this).val().trim();
